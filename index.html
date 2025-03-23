@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index4.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- <header>
+    <button id="sign-out" type="submit">sign-out</button>
+    </header>
+    <main>
+       <form id="main-form">
+     <label for="name">
+     Name
+     <input id="input-name" type="text" name="name" >
+     </label>
+     <label for="Description">
+     Description
+     <input id="input-description" type="text"  name="Description">
+     </label>
+      <label for="Category">
+     Category
+     <select name="Category" id="">
+        <option value="0">Электротехника</option>
+        <option value="0">Декор</option>
+        <option value="0">Мебель</option>
+     </select>
+     </label>
+     <label for="Date">
+     Date
+     <input id="input-date" type="number"  name="Date">
+     </label>
+     <label for="isSelected">
+     isSelected
+     <input id="input-isSelected" type="checkbox"  name="isSelected">
+     </label>
+    <button class="btn-confirm" type="submit">Confirm</button> -->
+        </form>
+        <Div class="add-filtr-unfiltr-users">
+        <button class="btn-add-user">add user</button>
+        <button class="filtr-users">отсортировать по возрастанию</button>
+        <button class="unfiltr-users">отсортировать по убыванию</button>
+        </Div>
+        <div class="div-for-inputs">
+          <div class="action">
+            <input type="text" id="search-input" placeholder="search by name">
+          </div>
+        <!-- <label for="select-sorting">
+            Sorting by
+            <select id="select-sorting" name="select-sorting">
+              <option value="Low to High">Low to High</option>
+              <option value="High to Low">High to Low</option>
+              <option value="By alHigh to Lowphabet">By alHigh to Lowphabet</option>
+            </select>
+          </label> -->
+          <label for="select-position">
+            Position
+            <select id="select-position" name="position">
+              <option value="Manager">Manager</option>
+              <option value="Developer">Developer</option>
+              <option value="Tester">Tester</option>
+            </select>
+          </label>
+          <label for="select-sorting">
+            <p>price:</p>
+           <div class="select-sorting">
+          <input type="number" placeholder="от" id="input-from">
+          <input type="number" placeholder="до" id="input-to">
+           </div>
+          </label>
+        </div>
+        <div class="modal-wrapper">
+            <form class="form-for-users">
+            <header>
+             <h2>Add user</h2>
+             <button type="button"  class="btn-close-form-for-users">X</button>
+            </header>
+         <label for="name">
+         Name:
+         <input type="text" name="name">
+         </label>
+         <label for="avatar">
+         Avatar:
+         <input type="text" name="avatar">
+         </label>
+         <label for="Price">
+            Price:
+            <input type="text" name="Price">
+         </label>
+         <label for="select-position">
+            Position
+            <select id="select-position" name="position">
+              <option value="Manager">Manager</option>
+              <option value="Developer">Developer</option>
+              <option value="Tester">Tester</option>
+            </select>
+          </label>
+    Description
+     <textarea id="textarea-description"  name="description" rows="4"></textarea>
+     <label for="featured">
+    featured
+     <input id="checkbox-featured" type="checkbox" name="featured" />
+    </label>
+    <div>
+      <p>gender:</p>
+     <label for="radio-male">
+    Male
+    <input type="radio" id="radio-male" name="gender" value="male">
+     </label>
+     <label for="radio-female">
+     Female
+     <input type="radio" id="radio-male" name="gender" value="female">
+     </label>
+    </div>
+         <button type="submit" class="form-submit-btn">submit</button>
+            </form>
+        </div>
+        <div class="modal-wrapper">
+                        <form class="form-for-editing-users">
+                <header>
+                 <h2>Edit user</h2>
+                 <button type="button"  class="btn-close-form-for-users">X</button>
+                </header>
+             <label for="name">
+             Name:
+             <input type="text" name="name">
+             </label>
+             <label for="Description">
+             Description:
+             <input type="text" name="Description">
+             </label>
+             <label for="avatar">
+             Avatar:
+             <input type="text" name="avatar">
+             </label>
+             <label for="Price">
+                Price:
+                <input type="text" name="price">
+             </label>
+             <button type="submit" class="form-submit-btn">submit</button>
+                        </form>
+        </div>
+        <ul class="notifications"></ul>
+        <div>
+            <div class="loader-div">
+        <span class="loader"></span>
+           </div>
+        <section class="section-users">
+            <div class="users-list">
+            </div>
+        </section>
+        </div>
+        <!-- <section class="advantages"> 
+            <h2>Why Choose Us?</h2>
+        </section> -->
+    </main>
+    <script type="module" src="index4.mjs"></script>
+    <script type="module" src="./mock/users.mjs"></script>
+</body>
+</html>
